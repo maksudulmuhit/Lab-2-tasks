@@ -1,1 +1,38 @@
+#include <iostream> 
+using namespace std;
+
+int main() 
+{
+    int i, j, n, x, y; 
+
+    
+    cout << " Type number of rows:";
+    cin >> n; 
+
+    cout << "The following Floyd's Triangle: \n";
+ 
+    for (i = 1; i <= n; i++) 
+    {
+        if (i % 2 == 0)
+        {
+            x = 1; 
+            y = 0;
+        }
+        else 
+        {
+            x = 0;
+            y = 1; 
+        }
+
+        for (j = 1; j <= i; j++) 
+        {
+            if (j % 2 == 0) 
+                cout << x;
+            else
+                cout << y; 
+        }
+
+        cout << endl; 
+    }
+}
 
